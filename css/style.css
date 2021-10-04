@@ -95,10 +95,10 @@ h1{
     
 }
 .phonesearch{
-    visibility: hidden;
+    display:none;
     color:#F2F2F2;
     font-size:16px ; 
-    border: 11px var(--bluemain) solid;
+    border: 12px var(--bluemain) solid;
     background: var(--bluemain);
     border-radius: 10px;
     
@@ -170,11 +170,11 @@ h1{
     display:flex;
 }
 .desksearch{
-    visibility: hidden;
+    display:none;
 }
 .phonesearch{
-    visibility: visible;
-    position: relative;
-    right:110px;
+    display:flex;
+    position:relative;
+    right:15px;
 }
 }
