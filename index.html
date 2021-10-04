@@ -4,21 +4,36 @@
         <title>Booki-Accueil</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/normalize.css"
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <body>
-        <div id=page>
-        <header>
-                <img src="images/booki@3x.png" alt="Logo de Booki" id="logo"/>
+        <div class="global">
+            <header class="header">
+                <img src="images/booki@3x.png" alt="Logo de Booki" class="logo"/>
                 <nav>
-                    <a href="#" class="navlink">Hébergements</a>
-                    <a href="#" class="navlink">Activités</a>
+                    <a href="#Hebergements" class="navlink">Hébergements</a>
+                    <a href="#Activités" class="navlink">Activités</a>
                 </nav>
-        </header>
-        
+            </header>
+            <div class="search">
+                <div class="headsearch">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p id="lieu">En plein centre ville ou en plein nature</p>
+                </div>
+                <div class="searchbutton">
+                    <i class="fas fa-map-marker-alt" id="marker"></i>
+                    <form method="post" action="#Recherche">
+                        <p>
+                            <input type="text" value=" Marseilles, France" name="citysearch" id="citysearch" />
+                        </p>
+                     </form>
+                     <a href="#recherche" class="desksearch">Rechercher</a>
+                     <a href="#recherche" class="phonesearch"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
         </div>
     </body>
 </html>

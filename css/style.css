@@ -16,18 +16,20 @@ a{
     color: inherit;
 }
 
+
 /*Header*/
-header{
+.header{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
     background: #fff;
 }
 
-#logo{
+.logo{
     display:flex;
     height:50px;
-    margin:30px 12px;    
+    margin:30px 12px;   
+    padding-left: 22px; 
 }
 
 nav{
@@ -48,9 +50,60 @@ nav{
     border-top: 3px solid var(--bluemain)
 }
 
+/*Recherche*/
+.search{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin:-10px 0px;
+    padding:10px 50px;
+}
 
+h1{
+    font-size: 22px;
+}
 
+.searchbutton{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 100%;
+    background-color: #fff;
+    margin-top: -5px;
+}
 
+#marker {
+    font-size:16px ; 
+    border: 12px var(--bgmain) solid;
+    background: var(--bgmain);
+    border-radius: 10px 0px 0px 10px;
+}
+#citysearch{
+    height: 36px ;
+    font-weight: bold;
+    border: 1px var(--bgmain) solid;
+}
+.desksearch{
+    font-size: 15px;
+    border: 11px solid var(--bluemain);
+    background: var(--bluemain);
+    color:#F2F2F2;
+    font-weight: 600;
+    border-radius: 0px 10px 10px 0px;
+    position:relative;
+    
+}
+.phonesearch{
+    visibility: hidden;
+    color:#F2F2F2;
+    font-size:16px ; 
+    border: 11px var(--bluemain) solid;
+    background: var(--bluemain);
+    border-radius: 10px;
+    
+
+}
 
 
 
@@ -65,7 +118,7 @@ nav{
 
 /*header*/
 
-header{
+.header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -73,7 +126,7 @@ header{
     width: 100%;
 }
 
-#logo{
+.logo{
     margin:25px 200px 0px 200px;
 }
 
@@ -92,11 +145,36 @@ nav{
     font-size: 18px;
     margin:0px;
     padding:40px 0px 5px 0px ;
-    border-bottom: lightgray solid 3px;
+    border-bottom: rgba(238, 236, 236, 0.911) solid 3px;
 }
 
 .navlink:hover{
     border-top:hidden;
     border-bottom: solid var(--bluemain) 3px
+}
+/*Recherche*/
+
+.search{
+    max-width:100%;
+    display: flex;
+    padding-top: 25px;
+    justify-content: center;
+}
+
+
+h1{
+    font-size: 19px;
+}
+
+.searchbutton{
+    display:flex;
+}
+.desksearch{
+    visibility: hidden;
+}
+.phonesearch{
+    visibility: visible;
+    position: relative;
+    right:110px;
 }
 }
