@@ -1,6 +1,7 @@
 :root{
     --bluemain:#0065FC;
     --bgmain:#F2F2F2;
+    --selectblue:#DEEBFF;
 }
 
 /*Style général*/
@@ -79,10 +80,12 @@ h1{
     background: var(--bgmain);
     border-radius: 10px 0px 0px 10px;
 }
+
 #citysearch{
     height: 36px ;
     font-weight: bold;
     border: 1px var(--bgmain) solid;
+
 }
 .desksearch{
     font-size: 15px;
@@ -92,8 +95,8 @@ h1{
     font-weight: 600;
     border-radius: 0px 10px 10px 0px;
     position:relative;
-    
 }
+
 .phonesearch{
     display:none;
     color:#F2F2F2;
@@ -101,10 +104,70 @@ h1{
     border: 12px var(--bluemain) solid;
     background: var(--bluemain);
     border-radius: 10px;
-    
+}
+
+/*Filtres*/
+.filterarea{
+    width: 100%;
+    display: flex;
+    background: #fff;
+    padding-left:50px;
+    flex-direction: column;
+}
+
+.filters{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 
 }
 
+
+.solofilter{
+    display:flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin:10px 25px ;
+    height:30px;
+}
+
+.filtermarks{
+    display:flex;
+    color:var(--bluemain);
+    background-color:var(--selectblue) ;
+    border-radius: 25px;
+    border:var(--selectblue) solid 9px;
+    position:relative;
+}
+
+.filtertext{
+    display:flex;
+    flex-shrink: 0;
+    font-weight: 540;
+    border:rgba(194, 193, 193, 0.678) solid 1px;
+    border-radius: 20px;
+    padding:8px 10px 4px 40px;
+    margin-left:-17%;
+}
+
+.filtertext:hover{
+    background-color: var(--selectblue);
+    border-color: var(--selectblue);
+}
+
+
+.info{
+    display:flex;
+    align-items: center;
+    margin-top: 2%;
+}
+#info{
+    color:var(--bluemain);
+    border:1px lightgrey solid;
+    border-radius: 25px;
+    padding:5px 10px;
+    margin-right: 1%;
+}
 
 
 
