@@ -1,11 +1,10 @@
 ﻿A RAJOUTER Important
-- Responsivité footer
 - Partie Hébergements + populaire + responsive
 - Partie Activités + responsive
 
 A REGLER Important
 - Ecarts entre icone filtre et leur texte
-- Padding left du footer
+- Padding left du footer (pas le même écart que la div Global avec le même pourcentage)
 
 A CHANGER Mineur 
 - Rajouter Lien sur le logo
