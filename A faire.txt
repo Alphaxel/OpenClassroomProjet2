@@ -1,0 +1,13 @@
+﻿A RAJOUTER Important
+- Responsivité footer
+- Partie Hébergements + populaire + responsive
+- Partie Activités + responsive
+
+A REGLER Important
+- Ecarts entre icone filtre et leur texte
+- Padding left du footer
+
+A CHANGER Mineur 
+- Rajouter Lien sur le logo
+- Utiliser vrai effet gras pour les liens du footer
+- Rendre icones des filtres clickables

@@ -18,55 +18,65 @@
                     <a href="#Activités" class="navlink">Activités</a>
                 </nav>
             </header>
-            <div class="search">
-                <div class="headsearch">
+            <section class="search">
+                <header class="headsearch">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p id="lieu">En plein centre ville ou en plein nature</p>
-                </div>
-                <div class="searchbutton">
-                    <i class="fas fa-map-marker-alt" id="marker"></i>
-                    <form method="post" action="#Recherche">
-                        <p>
-                            <input type="text" value=" Marseilles, France" name="citysearch" id="citysearch" />
-                        </p>
-                     </form>
-                     <a href="#recherche" class="desksearch">Rechercher</a>
-                     <a href="#recherche" class="phonesearch"><i class="fas fa-search"></i></a>
-                </div>
-            </div>
-            <div class="filterarea">
+                    <p>En plein centre ville ou en plein nature</p>
+                </header>
+                <form method="post" action="#" class="searchbutton">
+                    <div class="searchmarker">
+                        <i class="fas fa-map-marker-alt"></i>  
+                    </div>
+                    <input type="text" placeholder=" Marseilles, France" name="citysearch" id="citysearch" required/>
+                <button class="desksearch" type="submit">Rechercher</button>
+                <button class="phonesearch" type="submit">
+                    <i class="fas fa-search"></i></a>
+                </button>
+                </form>
+            </section>
+            <section class="filterarea">
                 <div class="filters">
-                        Filtres
-                        <div class="solofilter">
-                            <span class="filtermarks"><i class="fas fa-money-bill-wave"></i></span>
-                            <a href="#FiltreEconomique">
-                                <span class="filtertext">Économique</span>
-                            </a>
-                        </div>
-                        <div class="solofilter">
-                            <span class="filtermarks"><i class="fas fa-child"></i></span>
-                            <a href="#FiltreFamilial">
-                                <span class="filtertext">Familial</span>
-                            </a>
-                        </div>
-                        <div class="solofilter">
-                            <span class="filtermarks"><i class="fas fa-heart"></i></span>
-                            <a href="#FiltreRomantique">
-                                <span class="filtertext">Romantique</span>
-                            </a>
-                        </div>
-                        <div class="solofilter">
-                            <span class="filtermarks"><i class="fas fa-dog"></i></span>
-                            <a href="#FiltreAnimaux">
-                                <span class="filtertext">Animaux Autorisés</span>
-                            </a>
-                        </div>
-                    
+                    <h2 class="filtertitle">Filtres</h2>
+                    <div class="solofilter">
+                        <div class="filtermarks"><i class="fas fa-money-bill-wave"></i></div>
+                        <a href="#" class="filtertext">Économique</a>
+                    </div>
+                    <div class="solofilter">
+                        <div class="filtermarks"><i class="fas fa-child"></i></div>
+                        <a href="#" class="filtertext">Familial</a>
+                    </div>
+                    <div class="solofilter">
+                        <div class="filtermarks"><i class="fas fa-heart"></i></div>
+                        <a href="#" class="filtertext">Romantique</a>
+                    </div>
+                    <div class="solofilter">
+                        <div class="filtermarks"><i class="fas fa-dog"></i></div>
+                        <a href="#" class="filtertext">Animaux Autorisés</a>
+                    </div>
                 </div>
                 <div class="info">
-                    <i class="fas fa-info" id="info"></i> Plus de 500 logements sont disponibles dans cette ville
+                    <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
                 </div>
-            </div>
+            </section>
+            
         </div>
+        <footer class="footer">
+            <ul>
+                <li class="footercategory">A propos</li>
+                <li><a href="#" class="footerlink">Fonctionnement du site</a></li>
+                <li><a href="#" class="footerlink">Conditions générales de vente</a></li>
+                <li><a href="#" class="footerlink">Données et confidentialité</a></li>
+            </ul>
+            <ul>
+                <li class="footercategory">Nos hébergements</li>
+                <li><a href="#" class="footerlink">Charte qualité</a></li>
+                <li><a href="#" class="footerlink">Soumettre votre hôtel</a></li>
+            </ul>
+            <ul>
+                <li class="footercategory">Assistance</li>
+                <li><a href="#" class="footerlink">Centre d'aide</a></li>
+                <li><a href="#" class="footerlink">Nous contacter</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
