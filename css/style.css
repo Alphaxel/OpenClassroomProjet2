@@ -179,7 +179,7 @@ h1{
 
 .Hebergements{
     display:flex;
-    padding:3%;
+    padding:4%;
 }
 
 .targetlodging{
@@ -188,29 +188,38 @@ h1{
     border-radius: 20px;
 }
 
+.targetlodgingdcards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 .targetcard{
-    display:table;
+    display:flex;
+    margin-bottom: 25px;
 }
 
 .targetfigure{
     background-color: #fff;
     padding:9px;
     border-radius: 20px;
-    box-sizing: border-box;
+    margin:0px;
 }
 
 .targetimg{
     border-radius: 10px 10px 0px 0px ;
-    object-fit: cover;
+    object-fit:cover ;
+    width: 200px ;
+    height:46%;
 }
 .targetfiguretitle{
-    font-size: 19px;
+    font-size: 16px;
     margin-top:6px;
     margin-bottom:6px;
 }
 
 .targetcardprice{
+    font-size: 15px;
     margin-top:6px;
     margin-bottom:6px;
 }
@@ -223,10 +232,6 @@ h1{
 .badgrade{
     color:lightgrey;
     font-size:14px;
-}
-
-.targetimg{
-    width: 250px;
 }
 
 /*Footer*/
