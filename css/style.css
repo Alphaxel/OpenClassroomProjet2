@@ -8,7 +8,7 @@
 body{
     font-family: "Raleway", "Sans serif";
     margin:0px;
-    background-color:var(--bgmain);
+    background-color:#fff;
 }
 
 a{
@@ -17,7 +17,7 @@ a{
 }
 
 .global{
-    background: #fff;
+    margin: 0px 40px;
 }
 
 
@@ -30,9 +30,8 @@ a{
 
 .logo{
     display:flex;
-    height:50px;
+    height:40px;
     margin:30px 0px;   
-    padding-left: 3%; 
 }
 
 nav{
@@ -46,7 +45,7 @@ nav{
     font-weight: 400;
     font-size: 18px;
     margin:0px 20px 40px 20px;
-    padding-top:46px ;
+    padding-top:36px ;
 }
 .navlink:hover{
     color:var(--bluemain);
@@ -58,7 +57,6 @@ nav{
     display: flex;
     flex-direction: column;
     margin:-10px 0px;
-    padding:10px 4%;
 }
 
 h1{
@@ -92,6 +90,7 @@ h1{
     color:#F2F2F2;
     font-weight: 600;
     border-radius: 0px 10px 10px 0px;
+    cursor:pointer;
 }
 
 .phonesearch{
@@ -101,13 +100,14 @@ h1{
     border: 12px var(--bluemain) solid;
     background: var(--bluemain);
     border-radius: 10px;
+    cursor:pointer;
 }
 
 /*Filtres*/
 .filterarea{
     display: flex;
-    padding-left:4%;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .filters{
@@ -127,7 +127,7 @@ h1{
 .solofilter{
     display:flex;
     align-items:center;
-    margin-left:7px;
+    margin-left:25px;
 }
 
 .filtermarks{
@@ -136,17 +136,20 @@ h1{
     border:var(--selectblue) solid 9px;
     position:relative;
     background:var(--selectblue);
+    height:20px;
+    width:20px;
 }
 
 
 .filtertext{
     display:inline;
-    font-weight: 520;
+    font-weight: bold;
     border:rgba(194, 193, 193, 0.678) solid 1px;
     border-radius: 20px;
     padding:8px 15px 8px 40px;
-    margin-left:-15%;
+    margin-left:-35px;
     box-sizing: border-box;
+    cursor:pointer;
 }
 
 .filtertext:hover{
@@ -179,66 +182,167 @@ h1{
 
 .Hebergements{
     display:flex;
-    padding:4%;
+    margin-top: 30px;
 }
 
 .targetlodging{
-    width:60%;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-}
-
-.targetlodgingdcards{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex: 0 1 65%;
+    background-color: var(--bgmain);
+    border-radius: 20px;
+    padding: 25px;
+    margin-right:40px;
+}
+
+.targetheader{
+    width:100%;
+}
+
+.targetheadertitle{
+    font-size: 22px;
+    padding-left: 15px;
+    margin: 14px 0px;
 }
 
 .targetcard{
-    display:flex;
-    margin-bottom: 25px;
+    flex:1 0 28%;
+    margin :15px;
 }
 
+.targetcard:hover{
+    transform: scale(1.01);
+}
 .targetfigure{
     background-color: #fff;
-    padding:9px;
+    padding:6px;
     border-radius: 20px;
     margin:0px;
+    box-shadow:2px 2px 5px #d8d3d3 ;
 }
 
 .targetimg{
     border-radius: 10px 10px 0px 0px ;
     object-fit:cover ;
-    width: 200px ;
-    height:46%;
+    width:100%;
+    height:100px;
 }
 .targetfiguretitle{
     font-size: 16px;
     margin-top:6px;
     margin-bottom:6px;
+    padding-left:9px;
 }
 
 .targetcardprice{
-    font-size: 15px;
+    font-size: 16px;
     margin-top:6px;
     margin-bottom:6px;
+    padding-left:9px;
 }
 
+.targetcardgrade{
+    padding-left:9px;
+}
 .goodgrade{
     color:var(--bluemain);
-    font-size:14px;
+    font-size:13px;
+    margin-right:-2px
 }
 
 .badgrade{
     color:lightgrey;
-    font-size:14px;
+    font-size:13px;
+    margin-right:-2px;
+}
+
+.moretargetlodging{
+    width:100%;
+    font-weight: bold;
+    font-size: 17px;
+    padding-left: 15px;
+    margin: 14px 0px;
+    cursor:pointer;
+}
+
+.popularlodging{
+    display:flex;
+    flex-flow:column wrap;
+    flex: 0 1 30%;
+    background-color: var(--bgmain);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.popularheader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populartitle{
+    font-size: 22px;
+    margin:14px 0px;
+}
+
+.popularicon{
+    font-size: 22px;
+}
+
+.popularcard{
+    margin :15px;
+}
+
+.popularcard:hover{
+    transform: scale(1.01);
+}
+.popularfigure{
+    background-color: #fff;
+    padding:6px;
+    border-radius: 20px;
+    margin:0px;
+    box-shadow:2px 2px 5px #d8d3d3 ;  
+    display:flex;
+    flex:wrap;
+}
+
+.popularimg{
+    border-radius: 10px 0px 0px 10px ;
+    object-fit:cover ;
+    width:120px;
+    height:120px;
+}
+
+.popularfigurecaption{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.popularfiguretitle{
+    font-size: 16px;
+    margin:5px 0px 0px;
+    padding-left:9px;
+}
+
+.popularcardprice{
+    font-size: 15px;
+    margin-top:6px;
+    margin-bottom:30px;
+    padding-left:9px;
+}
+
+.popularcardgrade{
+    padding-left:9px;
 }
 
 /*Footer*/
 .footer{
     display:flex;
-    padding: 0% 30% 2% 4%;
+    padding: 0% 30% 2% 53px;
     justify-content:space-between;
+    background-color: #F2F2F2;
+    margin-top:30px;
 }
 
 ul{
@@ -264,10 +368,15 @@ li{
 
 @media only screen and (min-width : 280px) and (max-width : 767px){
 
+.global{
+    margin-left:53px;
+}
+
 /*header*/
 
 .header{
     justify-content: space-around;
+    margin-left:-53px;
 }
 
 .logo{

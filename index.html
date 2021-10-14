@@ -14,8 +14,8 @@
             <header class="header">
                 <img src="images/booki@3x.png" alt="Logo de Booki" class="logo"/>
                 <nav>
-                    <a href="#Hebergements" class="navlink">Hébergements</a>
-                    <a href="#Activités" class="navlink">Activités</a>
+                    <a href="#hebergements" class="navlink">Hébergements</a>
+                    <a href="#activités" class="navlink">Activités</a>
                 </nav>
             </header>
             <section class="search">
@@ -27,7 +27,7 @@
                     <div class="searchmarker">
                         <i class="fas fa-map-marker-alt"></i>  
                     </div>
-                    <input type="text" placeholder=" Marseilles, France" name="citysearch" id="citysearch" required/>
+                    <input type="text" placeholder=" Marseille, France" name="citysearch" id="citysearch" required/>
                 <button class="desksearch" type="submit">Rechercher</button>
                 <button class="phonesearch" type="submit">
                     <i class="fas fa-search"></i></a>
@@ -39,132 +39,204 @@
                     <h2 class="filtertitle">Filtres</h2>
                     <div class="solofilter">
                         <div class="filtermarks"><i class="fas fa-money-bill-wave"></i></div>
-                        <a href="#" class="filtertext">Économique</a>
+                        <span class="filtertext">Économique</span>
                     </div>
                     <div class="solofilter">
                         <div class="filtermarks"><i class="fas fa-child"></i></div>
-                        <a href="#" class="filtertext">Familial</a>
+                        <span class="filtertext">Familial</span>
                     </div>
                     <div class="solofilter">
                         <div class="filtermarks"><i class="fas fa-heart"></i></div>
-                        <a href="#" class="filtertext">Romantique</a>
+                        <span class="filtertext">Romantique</span>
                     </div>
                     <div class="solofilter">
                         <div class="filtermarks"><i class="fas fa-dog"></i></div>
-                        <a href="#" class="filtertext">Animaux Autorisés</a>
+                        <span class="filtertext">Animaux Autorisés</span>
                     </div>
                 </div>
                 <div class="info">
                     <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
                 </div>
             </section>
-            <section class="Hebergements">
+            <div class="Hebergements" id="hebergements">
                 <section class="targetlodging">
                     <header class="targetheader">
-                        <h2 class="targetheadertitle">Hébergements à Marseilles</h2>
+                        <h2 class="targetheadertitle">Hébergements à Marseille</h2>
                     </header>
-                <section class="targetlodgingdcards">
                     <article class="targetcard">
-                        <figure class="targetfigure">
-                            <img src="images/AubergeCannebiere.jpg" class="targetimg" alt="Chambre avec vue sur la rue et lit superposé ">
-                            <figcaption class="targetfigurecaption">
-                                <h3 class="targetfiguretitle">Auberge la Cannebière</h3>
-                                <p class="targetcardprice">Nuit à partir de <strong>25€</strong></p>
-                                <div class="targetcardgrade">
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star badgrade"></i>
-                                </div>          
-                            </figcaption>
-                        </figure>
+                        <a href="#">
+                            <figure class="targetfigure">
+                                    <img src="images/AubergeCannebiere.jpg" class="targetimg" alt="Chambre avec vue sur la rue et lit superposé ">
+                                <figcaption class="targetfigurecaption">
+                                    <h3 class="targetfiguretitle">Auberge la Cannebière</h3>
+                                    <p class="targetcardprice">Nuit à partir de <strong>25€</strong></p>
+                                    <div class="targetcardgrade">
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i> 
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star badgrade"></i>
+                                    </div>          
+                                </figcaption>
+                            </figure>
+                        </a>
                     </article>
                     <article class="targetcard">
-                        <figure class="targetfigure">
-                            <img src="images/HotelduPort.jpg" class="targetimg" alt="Chambre très grise avec deux lits séparés">
-                            <figcaption class="targetfigurecaption">
-                                <h3 class="targetfiguretitle">Hôtel du Port</h3>
-                                <p class="targetcardprice">Nuit à partir de 52€</p>
-                                <div class="targetcardgrade">
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                </div>          
-                            </figcaption>
-                        </figure>
+                        <a href="#">
+                            <figure class="targetfigure">
+                                <img src="images/HotelduPort.jpg" class="targetimg" alt="Chambre très grise avec deux lits séparés">
+                                <figcaption class="targetfigurecaption">
+                                    <h3 class="targetfiguretitle">Hôtel du Port</h3>
+                                    <p class="targetcardprice">Nuit à partir de 52<strong>€</strong></p>
+                                    <div class="targetcardgrade">
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                    </div>          
+                                </figcaption>
+                            </figure>
+                        </a>
                     </article>
                     <article class="targetcard">
-                        <figure class="targetfigure">
-                            <img src="images/HotelLesMouettes.jpg" class="targetimg" alt="Chambre avec deux lits séparés et une grande penderie ">
-                            <figcaption class="targetfigurecaption">
-                                <h3 class="targetfiguretitle">Hôtel Les mouettes</h3>
-                                <p class="targetcardprice">Nuit à partir de 76€</p>
-                                <div class="targetcardgrade">
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star badgrade"></i>
-                                </div>
-                            </figcaption>
-                        </figure>
+                        <a href="#">
+                            <figure class="targetfigure">
+                                <img src="images/HotelLesMouettes.jpg" class="targetimg" alt="Chambre avec deux lits séparés et une grande penderie ">
+                                <figcaption class="targetfigurecaption">
+                                    <h3 class="targetfiguretitle">Hôtel Les mouettes</h3>
+                                    <p class="targetcardprice">Nuit à partir de 76<strong>€</strong></p>
+                                    <div class="targetcardgrade">
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star badgrade"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
                     </article>
                     <article class="targetcard">
-                        <figure class="targetfigure">
-                            <img src="images/Hotel de la mer.jpg" class="targetimg" alt="Chambre avec un lit 2 places et une décoration plage ">
-                            <figcaption class="targetfigurecaption">
-                                <h3 class="targetfiguretitle">Hôtel de la mer</h3>
-                                <p class="targetcardprice">Nuit à partir de 46€</p>
-                                <div class="targetcardgrade">
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star badgrade"></i>
-                                    <i class="fas fa-star badgrade"></i>
-                                </div>
-                            </figcaption>          
-                        </figure>
+                        <a href="">
+                            <figure class="targetfigure">
+                                <img src="images/Hotel de la mer.jpg" class="targetimg" alt="Chambre avec un lit 2 places et une décoration plage ">
+                                <figcaption class="targetfigurecaption">
+                                    <h3 class="targetfiguretitle">Hôtel de la mer</h3>
+                                    <p class="targetcardprice">Nuit à partir de 46<strong>€</strong></p>
+                                    <div class="targetcardgrade">
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star badgrade"></i>
+                                        <i class="fas fa-star badgrade"></i>
+                                    </div>
+                                </figcaption>          
+                            </figure>
+                        </a>
                     </article>
                     <article class="targetcard">
-                        <figure class="targetfigure">
-                            <img src="images/AubergeLePanier.jpg" class="targetimg" alt="Chambre avec deux lits superposés dans un style rustique">
-                            <figcaption class="targetfigurecaption">
-                                <h3 class="targetfiguretitle">Auberge Le Panier</h3>
-                                <p class="targetcardprice">Nuit à partir de <strong>23€</strong></p>
-                                <div class="targetcardgrade">
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star badgrade"></i>
-                                </div>
-                            </figcaption>         
-                        </figure>
+                        <a href=#>
+                            <figure class="targetfigure">     
+                                <img src="images/AubergeLePanier.jpg" class="targetimg" alt="Chambre avec deux lits superposés dans un style rustique">
+                                <figcaption class="targetfigurecaption">
+                                    <h3 class="targetfiguretitle">Auberge Le Panier</h3>
+                                    <p class="targetcardprice">Nuit à partir de <strong>23€</strong></p>
+                                    <div class="targetcardgrade">
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star badgrade"></i>
+                                    </div>
+                                </figcaption>         
+                            </figure>
+                        </a>
                     </article>
                     <article class="targetcard">
-                        <figure class="targetfigure">
-                            <img src="images/Hotel chez Amina.jpg" class="targetimg" alt="Chambre épurée avec deux lits séparés">
-                            <figcaption class="targetfigurecaption">
-                                <h3 class="targetfiguretitle">Hôtel chez Amina </h3>
-                                <p class="targetcardprice">Nuit à partir de 96€</p>
-                                <div class="targetcardgrade">
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                    <i class="fas fa-star goodgrade"></i>
-                                </div>
-                            </figcaption>          
-                        </figure>
+                        <a href=#>
+                            <figure class="targetfigure">
+                                <img src="images/Hotel chez Amina.jpg" class="targetimg" alt="Chambre épurée avec deux lits séparés">
+                                <figcaption class="targetfigurecaption">
+                                    <h3 class="targetfiguretitle">Hôtel chez Amina </h3>
+                                    <p class="targetcardprice">Nuit à partir de 96<strong>€</strong></p>
+                                    <div class="targetcardgrade">
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                    </div>
+                                </figcaption>          
+                            </figure>
+                        </a>
                     </article>
-                </section>    
+                    <p class="moretargetlodging">Afficher plus</p>
                 </section>
-                <article class="mostpopularlodging">
-                </article>
-            </section>
+                <aside class="popularlodging">
+                    <header class="popularheader">
+                        <h2 class="populartitle">Les plus populaires</h2>
+                        <span class="popularicon"><i class="fas fa-chart-line"></i></span>
+                    </header>
+                    <article class="popularcard">
+                        <a href=#>
+                            <figure class="popularfigure">
+                                <img src="images/HotelLeSoleilDuMatin.jpg" class="popularimg" alt="Chambre épurée avec deux lits séparés">
+                                <figcaption class="popularfigurecaption">
+                                    <h3 class="popularfiguretitle">Hôtel Le soleil du matin </h3>
+                                    <p class="popularcardprice">Nuit à partir de 128<strong>€</strong></p>
+                                    <div class="popularcardgrade">
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                    </div>
+                                </figcaption>          
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="popularcard">
+                        <a href=#>
+                            <figure class="popularfigure">
+                                <img src="images/AuCoeurDeLEau.jpg" class="popularimg" alt="Chambre épurée avec deux lits séparés">
+                                <figcaption class="popularfigurecaption">
+                                    <h3 class="popularfiguretitle">Au coeur de l'eau Chambres d'hôtes </h3>
+                                    <p class="popularcardprice">Nuit à partir de 71<strong>€</strong></p>
+                                    <div class="popularcardgrade">
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star badgrade"></i>
+                                    </div>
+                                </figcaption>          
+                            </figure>
+                        </a>
+                    </article> 
+                    <article class="popularcard">
+                        <a href=#>
+                            <figure class="popularfigure">
+                                <img src="images/HotelToutBleuEtBLanc.jpg" class="popularimg" alt="Chambre épurée avec deux lits séparés">
+                                <figcaption class="popularfigurecaption">
+                                    <div class="popularfigurecaptiontext">
+                                        <h3 class="popularfiguretitle">Hôtel Tout bleu et Blanc </h3>
+                                        <p class="popularcardprice">Nuit à partir de 68<strong>€</strong></p>
+                                    </div>
+                                    <div class="popularcardgrade">
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star goodgrade"></i>
+                                        <i class="fas fa-star badgrade"></i>
+                                    </div>
+                                </figcaption>          
+                            </figure>
+                        </a>
+                    </article>
+                    
+                </aside>
+            </div>
         </div>
         <footer class="footer">
             <ul>
