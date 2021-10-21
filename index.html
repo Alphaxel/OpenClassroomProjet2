@@ -12,16 +12,16 @@
     <body>
         <div class="global">
             <header class="header">
-                <img src="images/booki@3x.png" alt="Logo de Booki" class="logo"/>
+                <a href="#" class="logolink"><img src="images/booki@3x.png" alt="Logo de Booki" class="logo"/></a>
                 <nav>
                     <a href="#hebergements" class="navlink">Hébergements</a>
-                    <a href="#activités" class="navlink">Activités</a>
+                    <a href="#activities" class="navlink">Activités</a>
                 </nav>
             </header>
             <section class="search">
                 <header class="headsearch">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en plein nature</p>
+                    <p>En plein centre ville ou en pleine nature</p>
                 </header>
                 <form method="post" action="#" class="searchbutton">
                     <div class="searchmarker">
@@ -183,8 +183,10 @@
                             <figure class="popularfigure">
                                 <img src="images/HotelLeSoleilDuMatin.jpg" class="popularimg" alt="Chambre épurée avec deux lits séparés">
                                 <figcaption class="popularfigurecaption">
-                                    <h3 class="popularfiguretitle">Hôtel Le soleil du matin </h3>
-                                    <p class="popularcardprice">Nuit à partir de 128<strong>€</strong></p>
+                                    <div class="test">
+                                        <h3 class="popularfiguretitle">Hôtel Le soleil du matin </h3>
+                                        <p class="popularcardprice">Nuit à partir de 128<strong>€</strong></p>
+                                    </div>
                                     <div class="popularcardgrade">
                                         <i class="fas fa-star goodgrade"></i>
                                         <i class="fas fa-star goodgrade"></i>
@@ -236,6 +238,77 @@
                     </article>
                     
                 </aside>
+            </div>
+            <div id="activities" class="blocactivity">
+                <section class="activities">
+                    <header class="activitiesheader">
+                        <h2 class="activitiesheadertitle">Activités à Marseille</h2>
+                    </header>
+                        <article class="activitybig">
+                            <a href="#" class="activitylink">
+                                <figure class="activityfigure">
+                                    <img src="images/VieuxPort.jpg" class="activitybigimg" alt="Dizaines de bateaux dans le port avec la ville en arrière plan">
+                                    <figcaption>
+                                        <h3 class="activityfiguretitle">Vieux Port</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                        <div class="activitiesduo">
+                            <article class="activitysmall1">
+                                <a href="#">
+                                    <figure class="activityfigure">
+                                        <img src="images/FortDePomegues.jpg" class="activitysmall1img" alt="Petit fort au milieu de rochers">
+                                        <figcaption>
+                                            <h3 class="activityfiguretitle">Fort de Pomègues</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="activitysmall2">
+                                <a href="#">
+                                <figure class="activityfigure">
+                                    <img src="images/IleDuFrioul.jpg" class="activitysmall2img" alt="Petite ile au loin">
+                                    <figcaption>
+                                        <h3 class="activityfiguretitle">Ile du Frioul</h3>
+                                    </figcaption>
+                                </figure>
+                                </a>
+                            </article>
+                        </div>
+                        <article class="activitybig">
+                            <a href="#">
+                                <figure class="activityfigure">
+                                    <img src="images/ParcNationalCalanques.jpg" class="activitybigimg" alt="Panorama de la cote rocheuse">
+                                    <figcaption>
+                                        <h3 class="activityfiguretitle">Parc National des Calanques</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                        <div class="activitiesduo">
+                            <article class="activitysmall3">
+                                <a href="#">
+                                    <figure class="activityfigure">
+                                        <img src="images/NotreDameDeLaGarde.jpg" class="activitysmall3img" alt="Vue éloignée de la basilique sur une colline surplombant la ville ">
+                                        <figcaption>
+                                            <h3 class="activityfiguretitle">Notre-Dame-de-la-Garde</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="activitysmall4">
+                                <a href="#">
+                                    <figure class="activityfigure">
+                                        <img src="images/ParcLongchamp.jpg" class="activitysmall4img" alt="Vue du batiment depuis le bassin de la fontaine">
+                                        <figcaption>
+                                            <h3 class="activityfiguretitle">Parc Longchamp</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </article>
+                        </div>
+                </section>
             </div>
         </div>
         <footer class="footer">
