@@ -454,23 +454,19 @@ li{
 @media only screen and (min-width : 280px) and (max-width : 767px){
 
 .global{
-    margin-left:53px;
+    margin:0px;
 }
 
 /*header*/
 
 .header{
     justify-content: space-around;
-    margin-left:-53px;
 }
 
-.logo{
-    margin:25px 200px 0px 200px;
-}
 
 nav{
     width: 100%;
-    padding:0px 0px 0px 0px;
+    padding:0px;
 }
 
 .navlink{
@@ -480,7 +476,7 @@ nav{
     font-weight: 400;
     font-size: 18px;
     margin:0px;
-    padding:5% 0px 5px 0px ;
+    padding:25px 0px 12px 0px ;
     border-bottom: rgba(238, 236, 236, 0.911) solid 3px;
 }
 
@@ -494,11 +490,13 @@ nav{
     display: flex;
     padding-top: 25px;
     justify-content: center;
+    margin-left: 30px;
 }
 
 
 h1{
     font-size: 19px;
+    margin-right: 40px;
 }
 
 .searchbutton{
@@ -513,22 +511,144 @@ h1{
     right:15px;
 }
 
+
 /*Filtres*/
+
+.filterarea{
+    margin-left: 30px;
+}
 .filtertitle{
     width:100%;
 }
-
+    
 .solofilter{
-    margin:6px 0px;
+    margin:6px 5px;
 }
-.filtertext{  
-    display:inline;
-    font-weight: 560;
-    border:rgba(194, 193, 193, 0.678) solid 2px;
+
+
+/*Hebergements*/
+.Hebergements{
+    flex-direction: column;
+}
+
+.targetlodging{
+    background-color: #fff;
+    flex-direction: column;
+    padding:0px;
+    margin:0px;
+}
+.targetheadertitle{
+    font-size:20px ;
+    padding-left: 0px;
+    margin-left: 30px;
+}
+
+.targetcard{
+    margin: 0px 0px 20px 0px;
+    width:85%;
+    align-self: center;
+}
+
+.targetimg{
+    height:125px;
+}
+.moretargetlodging{
+    width:inherit;
+    padding-left: 0px;
+    margin-left: 30px;
+}
+.popularlodging{
+    order:-1;
+    border-radius: 0px;
+    margin-bottom: 30px;
+}
+
+.populartitle{
+    font-size: 20px;
+}
+
+.popularcard{
+    margin:15px 0px;
+}
+
+.popularimg{
+    flex:1 50%;
+}
+
+
+/*Activités*/
+.activities{
+    flex-direction: column;
+    align-items: center;
+}
+.activitiesheader{
+    align-self: start;
+    margin:0px 0px 20px 30px;
+    width:inherit;
+}
+.activityfigure{
+    background-color: #fff;
     border-radius: 20px;
-    padding:8px 10px 4px 40px;
-    margin-left:-14%;
+    margin:0px;
+    box-shadow:2px 2px 5px #d8d3d3 ;
 }
+
+.activityfiguretitle{
+    padding:15px 0px 20px 20px;
+    margin:0px;
+    font-size: 15px;
+}
+
+.activitybig{
+    width: 85%;
+}
+.activitybigimg{
+    object-fit: cover;
+    width: 100%;
+    height:120px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activitiesduo{
+    width:85%;
+}
+
+.activitysmall1, .activitysmall2, .activitysmall3, .activitysmall4, .activitybig{
+    margin-bottom: 25px;
+}
+
+.activitysmall1:hover, .activitysmall2:hover, .activitysmall3:hover, .activitysmall4:hover, .activitybig:hover{
+    transform:scale(1.01)
+}
+
+.activitysmall1img {
+    object-fit: cover;
+    width: 100%;
+    height:120px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activitysmall2img {
+    object-fit: cover;
+    width: 100%;
+    height:120px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activitysmall3img {
+    object-fit: cover;
+    width: 100%;
+    height:120px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activitysmall4img {
+    object-fit: cover;
+    width: 100%;
+    height:120px;
+    border-radius: 20px 20px 0px 0px;
+}
+
 
 footer{
     display: flex;
