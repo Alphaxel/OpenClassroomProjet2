@@ -1,14 +1,12 @@
 :root{
-    --bluemain:#0065FC;
-    --bgmain:#F2F2F2;
+    --mainblue:#0065FC;
+    --greybg:#F2F2F2;
     --selectblue:#DEEBFF;
 }
 
 /*Style général*/
 body{
     font-family: "Raleway", "Sans serif";
-    margin:0px;
-    background-color:#fff;
 }
 
 a{
@@ -39,20 +37,19 @@ a{
 
 nav{
     display:flex;
-    padding-right: 3%;
+    padding-right: 50px;
     align-items:flex-end;
 
 }
 
 .navlink{
-    font-weight: 400;
     font-size: 18px;
     margin:0px 20px 40px 20px;
     padding-top:36px ;
 }
 .navlink:hover{
-    color:var(--bluemain);
-    border-top: 3px solid var(--bluemain)
+    color:var(--mainblue);
+    border-top: 3px solid var(--mainblue)
 }
 
 /*Recherche*/
@@ -67,30 +64,28 @@ h1{
 
 .searchbutton{
     display: flex;
-    flex-direction: row;
     align-items:center;
-    margin-top: -5px;
 }
 
 .searchmarker {
     font-size:16px ; 
-    border: 12px var(--bgmain) solid;
+    border: 12px var(--greybg) solid;
     border-radius: 10px 0px 0px 10px;
-    background:var(--bgmain);
+    background:var(--greybg);
 }
 
 #citysearch{
     height: 36px ;
     font-weight: bold;
-    border: 1px var(--bgmain) solid;
+    border: 1px var(--greybg) solid;
 
 }
 .desksearch{
     font-size: 15px;
-    border: 11px solid var(--bluemain);
-    background: var(--bluemain);
+    border: 11px solid var(--mainblue);
+    background: var(--mainblue);
     color:#F2F2F2;
-    font-weight: 600;
+    font-weight: bold;
     border-radius: 0px 10px 10px 0px;
     cursor:pointer;
 }
@@ -99,8 +94,8 @@ h1{
     display:none;
     color:#F2F2F2;
     font-size:16px ; 
-    border: 12px var(--bluemain) solid;
-    background: var(--bluemain);
+    border: 12px var(--mainblue) solid;
+    background: var(--mainblue);
     border-radius: 10px;
     cursor:pointer;
 }
@@ -115,7 +110,6 @@ h1{
 .filters{
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
 
 }
 
@@ -135,7 +129,7 @@ h1{
     display:flex;
     align-items: center;
     justify-content: center;
-    color:var(--bluemain);
+    color:var(--mainblue);
     border-radius: 25px;
     border:var(--selectblue) solid 9px;
     position:relative;
@@ -146,13 +140,11 @@ h1{
 
 
 .filtertext{
-    display:inline;
     font-weight: bold;
     border:rgba(194, 193, 193, 0.678) solid 1px;
     border-radius: 20px;
     padding:11px 15px 11px 40px;
     margin-left:-35px;
-    box-sizing: border-box;
     cursor:pointer;
 }
 
@@ -175,7 +167,7 @@ h1{
     margin-top: 20px;
 }
 .fa-info{
-    color:var(--bluemain);
+    color:var(--mainblue);
     border:1px lightgrey solid;
     border-radius: 25px;
     padding:5px 10px;
@@ -194,11 +186,11 @@ h1{
     display:flex;
     flex-wrap: wrap;
     flex: 0 1 63%;
-    background-color: var(--bgmain);
+    background-color: var(--greybg);
     border-radius: 20px;
-    padding: 25px;
+    padding: 20px;
     margin-right:40px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .targetheader{
@@ -212,8 +204,8 @@ h1{
 }
 
 .targetcard{
-    flex:0 0 29%;
-    margin:15px;
+    flex:0 0 28%;
+    margin:15px 0px;
 }
 
 .targetcard:hover{
@@ -249,7 +241,7 @@ h1{
     padding-left:9px;
 }
 .goodgrade{
-    color:var(--bluemain);
+    color:var(--mainblue);
     font-size:13px;
     margin-right:-2px
 }
@@ -273,7 +265,7 @@ h1{
     display:flex;
     flex-flow:column wrap;
     flex: 0 1 27%;
-    background-color: var(--bgmain);
+    background-color: var(--greybg);
     border-radius: 20px;
     padding: 25px;
 }
@@ -295,7 +287,7 @@ h1{
 }
 
 .popularcard{
-    margin :15px;
+    margin :15px 0px;
 }
 
 .popularcard:hover{
@@ -308,7 +300,6 @@ h1{
     margin:0px;
     box-shadow:2px 2px 5px #d8d3d3 ;  
     display:flex;
-    flex:wrap;
 }
 
 .popularimg{
@@ -347,7 +338,6 @@ h1{
 /*Activités*/
 
 .activities{
-    margin: 30px 0px;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -448,7 +438,93 @@ li{
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px){
+
+.global{
+    margin:30px;
+}
+.filtertitle{
+    width:100%;
+}
     
+.solofilter{
+    margin:6px 5px;
+}
+
+.Hebergements{
+    flex-direction: column;
+}
+
+.targetlodging{
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+.popularlodging{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 63%;
+    background-color: var(--greybg);
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: space-between
+}
+
+.popularheader{
+    width:100%;
+}
+
+.popularheadertitle{
+    font-size: 22px;
+    padding-left: 15px;
+    margin: 14px 0px;
+}
+
+.popularcard{
+    flex:0 0 28%;
+    margin:15px;
+}
+
+.popularcard:hover{
+    transform: scale(1.01);
+}
+.popularfigure{
+    background-color: #fff;
+    padding:6px;
+    border-radius: 20px;
+    margin:0px;
+    box-shadow:2px 2px 5px #d8d3d3 ;
+    display: block;
+}
+
+.popularimg{
+    border-radius: 10px 10px 0px 0px ;
+    object-fit:cover ;
+    width:100%;
+    height:145px;
+}
+.popularfiguretitle{
+    font-size: 18px;
+    margin:7px 0px;
+    padding-left:9px;
+}
+.popularfigurecaption{
+    display:flex;
+    padding:5px 20px 10px 0px;
+    flex-direction: column;
+    flex: 1 60%;
+    justify-content: space-between;
+
+}
+.popularcardprice{
+    font-size: 16px;
+    margin:7px 0px;
+    padding-left:9px;
+}
+
+.popularcardgrade{
+    padding-left:9px;
+}
+
 }
 
 @media only screen and (min-width : 280px) and (max-width : 767px){
@@ -456,6 +532,7 @@ li{
 .global{
     margin:0px;
 }
+
 
 /*header*/
 
@@ -482,7 +559,7 @@ nav{
 
 .navlink:hover{
     border-top:hidden;
-    border-bottom: solid var(--bluemain) 3px
+    border-bottom: solid var(--mainblue) 3px
 }
 /*Recherche*/
 
@@ -516,6 +593,9 @@ h1{
 
 .filterarea{
     margin-left: 30px;
+}
+.filters{
+    margin-right: 70px;
 }
 .filtertitle{
     width:100%;
