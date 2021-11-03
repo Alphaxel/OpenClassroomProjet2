@@ -101,6 +101,7 @@ h1{
 }
 
 /*Filtres*/
+
 .filterarea{
     display: flex;
     flex-direction: column;
@@ -143,8 +144,8 @@ h1{
     font-weight: bold;
     border:rgba(194, 193, 193, 0.678) solid 1px;
     border-radius: 20px;
-    padding:11px 15px 11px 40px;
-    margin-left:-35px;
+    padding:11px 15px 11px 45px;
+    margin-left:-40px;
     cursor:pointer;
 }
 
@@ -157,9 +158,6 @@ h1{
     background-color: var(--selectblue);
     border-color: var(--selectblue);
 }
-
-
-
 
 .info{
     display:flex;
@@ -414,7 +412,7 @@ h1{
 /*Footer*/
 .footer{
     display:flex;
-    padding: 0% 30% 2% 53px;
+    padding: 0px 30% 0px 60px;
     justify-content:space-between;
     background-color: #F2F2F2;
     margin-top:30px;
@@ -423,6 +421,7 @@ h1{
 ul{
     list-style: none;
     padding-left: 0px;
+    font-size:16px ;
 }
 
 li{
@@ -466,7 +465,7 @@ li{
     background-color: var(--greybg);
     border-radius: 20px;
     padding: 20px;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .popularheader{
@@ -480,8 +479,8 @@ li{
 }
 
 .popularcard{
-    flex:0 0 28%;
-    margin:15px;
+    flex:0 0 29%;
+    margin:10px;
 }
 
 .popularcard:hover{
@@ -504,15 +503,16 @@ li{
 }
 .popularfiguretitle{
     font-size: 18px;
-    margin:7px 0px;
+    margin:6px 0px;
     padding-left:9px;
 }
 .popularfigurecaption{
     display:flex;
-    padding:5px 20px 10px 0px;
+    padding:5px 5px 10px 0px;
     flex-direction: column;
     flex: 1 60%;
     justify-content: space-between;
+    height:96px;
 
 }
 .popularcardprice{
@@ -625,7 +625,7 @@ h1{
 
 .targetcard{
     margin: 0px 0px 20px 0px;
-    width:85%;
+    width:90%;
     align-self: center;
 }
 
@@ -674,23 +674,23 @@ h1{
 }
 
 .activityfiguretitle{
-    padding:15px 0px 20px 20px;
+    padding:15px 0px 15px 20px;
     margin:0px;
     font-size: 15px;
 }
 
 .activitybig{
-    width: 85%;
+    width: 90%;
 }
 .activitybigimg{
     object-fit: cover;
     width: 100%;
-    height:120px;
+    height:135px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .activitiesduo{
-    width:85%;
+    width:90%;
 }
 
 .activitysmall1, .activitysmall2, .activitysmall3, .activitysmall4, .activitybig{
@@ -704,34 +704,35 @@ h1{
 .activitysmall1img {
     object-fit: cover;
     width: 100%;
-    height:120px;
+    height:135px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .activitysmall2img {
     object-fit: cover;
     width: 100%;
-    height:120px;
+    height:135px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .activitysmall3img {
     object-fit: cover;
     width: 100%;
-    height:120px;
+    height:135px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .activitysmall4img {
     object-fit: cover;
     width: 100%;
-    height:120px;
+    height:135px;
     border-radius: 20px 20px 0px 0px;
 }
 
 
-footer{
-    display: flex;
+.footer{
     flex-wrap: wrap;
+    flex-direction: column;
+    padding:0px 0px 0px 20px;
 }
 }
